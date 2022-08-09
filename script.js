@@ -2,6 +2,9 @@
 let sketchPad = document.getElementById('sketch-pad')
 // new grid btn
 let newGrid = document.querySelector('.btn-newGrid')
+// input type color 
+let colorPicker = document.getElementById("color");
+
 
 // 16 by 16 grid
 for (let i = 1; i <= 256; i++) {
@@ -9,12 +12,16 @@ for (let i = 1; i <= 256; i++) {
   box.className = 'boxes'
   sketchPad.appendChild(box)
 }
+
+
 // add color on mouseover
 document.body.addEventListener('mouseover', function (e) {
   if (e.target.className == 'boxes') {
-    e.target.style.backgroundColor = 'orange'
+    e.target.style.backgroundColor = colorPicker.value;
   }
 })
+
+
 // add button
 newGrid.addEventListener('click', changeTheGrid)
 //make new grid
