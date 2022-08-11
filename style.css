@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
 body {
   padding: 0;
   margin: 0;
@@ -7,6 +11,18 @@ body {
 
 h1 {
   text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 25px;
+  color: #e09867;
+  margin: 5px;
+}
+
+#title {
+    /* font-family: 'Inspiration', cursive; */
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: 'Qwigley', cursive;
+    padding: 0 10px;
 }
 
 .main-container {
@@ -15,15 +31,70 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 80vh;
+  
 }
 
 #sketch-pad {
   display: grid;
-  width: 450px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   box-sizing: border-box;
-  box-shadow: -1px 5px 30px -10px rgba(0, 0, 0, 0.65);
+  background-color: white;
+  border-radius: 10px;
+   box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.34) inset;
+-webkit-box-shadow: 0px 0px 11px 8px rgba(0,0,0,0.34) inset;
+-moz-box-shadow: 0px 0px 11px 8px rgba(0,0,0,0.34) inset; 
+}
+
+.sketch-pad-outer {
+    width: 746px;
+    height: 546px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #d10101;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.styles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#color {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border: none;
+}
+
+.styles button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px 0;
+}
+
+ .circle1,.circle2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 5px;
+    box-shadow: -5px 6px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -5px 6px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 6px 8px 0px rgba(0,0,0,0.75);
+} 
+
+.bottom-buttons {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: flex-end;
 }

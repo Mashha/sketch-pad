@@ -64,7 +64,7 @@ function randomChoice() {
 function rubber() {
   document.body.addEventListener('mouseover', function (e) {
     if (e.target.className == 'boxes') {
-      e.target.style.backgroundColor = 'white'
+      e.target.style.backgroundColor = ''
     }
   })
 }
@@ -73,7 +73,7 @@ function rubber() {
 clearAll.addEventListener('click', function () {
   let allBoxes = document.querySelectorAll('.boxes')
   allBoxes.forEach(function (box) {
-    box.style.backgroundColor = 'white'
+    box.style.backgroundColor = ''
   })
 })
 
@@ -82,11 +82,11 @@ newGrid.addEventListener('click', changeTheGrid)
 //make new grid
 function changeTheGrid() {
   sketchPad.innerHTML = ''
-  let userInput = prompt(
-    'enter a number of squares per side that is less than 100',
-    '0',
-  )
-  let sideBoxes = parseInt(userInput)
+
+let currentValue = document.getElementById("myValue")
+currentValue.textContent = `${newGrid.value} X ${newGrid.value} `
+
+  let sideBoxes = newGrid.value
   sketchPad.style.gridTemplateColumns = `repeat(${sideBoxes}, 1fr)`
   sketchPad.style.gridTemplateRows = `repeat(${sideBoxes}, 1fr)`
   let grid = sideBoxes * sideBoxes
