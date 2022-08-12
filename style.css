@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
 body {
   padding: 0;
@@ -59,10 +60,14 @@ h1 {
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.styles {
+.styles-inner {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.styles h2 {
+  text-align: center;
 }
 
 #color {
@@ -110,7 +115,7 @@ span {
 }
 
 #name {
-  font-family: 'Qwigley', cursive;
+  font-family: 'Inspiration', cursive;
 }
 
 footer {
@@ -136,7 +141,7 @@ footer p {
     flex-direction: column;
   }
 
-  .styles {
+  .styles-inner {
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -171,5 +176,77 @@ footer p {
   .sketch-pad-outer {
     width: 546px;
     height: 346px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  #title {
+  font-size: 40px;
+  }
+  #sketch-pad {
+    width: 350px;
+    height: 350px;
+  }
+  .sketch-pad-outer {
+    width: 446px;
+    height: 446px;
+  }
+  .circle1, .circle2 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 472px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  #title {
+  font-size: 35px;
+  }
+  #sketch-pad {
+    width: 350px;
+    height: 350px;
+  }
+  .sketch-pad-outer {
+    width: 400px;
+    height: 400px;
+  }
+  .circle1, .circle2 {
+    width: 30px;
+    height: 30px;
+  }
+  .bottom-buttons{
+    height: 50px;
+  }
+}
+
+@media (max-width: 424px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  #title {
+  font-size: 35px;
+  }
+  #sketch-pad {
+    width: 300px;
+    height: 300px;
+  }
+  .sketch-pad-outer {
+    width: 350px;
+    height: 400px;
+  }
+  .circle1, .circle2 {
+    width: 30px;
+    height: 30px;
+  }
+  .bottom-buttons{
+    height: 50px;
   }
 }
