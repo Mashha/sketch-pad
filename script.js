@@ -83,8 +83,8 @@ newGrid.addEventListener('click', changeTheGrid)
 function changeTheGrid() {
   sketchPad.innerHTML = ''
 
-let currentValue = document.getElementById("myValue")
-currentValue.textContent = `${newGrid.value} X ${newGrid.value} `
+  let currentValue = document.getElementById('myValue')
+  currentValue.textContent = `${newGrid.value} X ${newGrid.value} `
 
   let sideBoxes = newGrid.value
   sketchPad.style.gridTemplateColumns = `repeat(${sideBoxes}, 1fr)`

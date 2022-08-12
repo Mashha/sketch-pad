@@ -8,25 +8,34 @@
     <title>Etch-a-sketch</title>
   </head>
   <body>
-    
     <div class="main-container">
-        <div class="sketch-pad-outer">
-    <h1> MAGIC <span id="title">Etch A Sketch</span> SCREEN</h1>
-      <div id="sketch-pad"></div>
-      <div class="bottom-buttons">
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-    </div>
-</div>
+      <div class="sketch-pad-outer">
+        <h1>
+          MAGIC
+          <span id="title">Etch A Sketch</span>
+          SCREEN
+        </h1>
+        <div id="sketch-pad"></div>
+        <div class="bottom-buttons">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+        </div>
+      </div>
       <div class="styles">
         <h2>Personal styles</h2>
-        <input type="color" id="color">
+        <input type="color" id="color" />
         <button id="color-black">Black</button>
         <button id="rainbow">Rainbow</button>
         <button id="clear-boxes">Rubber</button>
         <button id="clear-all">Clear</button>
         <label for="boxes">New grid</label>
-        <input type="range" min="1" max="100" class="btn-newGrid"></input>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          class="btn-newGrid"
+          name="range"
+        />
         <span id="myValue"></span>
       </div>
     </div>
