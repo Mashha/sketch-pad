@@ -109,6 +109,21 @@ span {
   text-align: center;
 }
 
+#name {
+  font-family: 'Qwigley', cursive;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 1250px) {
   .main-container {
     width: 100%;
