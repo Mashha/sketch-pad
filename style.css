@@ -118,6 +118,14 @@ span {
 
 #name {
   font-family: 'Inspiration', cursive;
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+#name:hover {
+  color: #d10101;
 }
 
 footer {
@@ -130,6 +138,7 @@ footer p {
   text-align: center;
   margin-bottom: 5px;
 }
+
 
 @media (max-width: 1250px) {
   .main-container {
